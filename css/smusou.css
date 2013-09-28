@@ -3,6 +3,7 @@ body{margin: 0;padding: 0;font-family: 'lucida grande',tahoma,verdana,arial,"hir
 .outline{background-color: rgb(0, 0, 0);background-image: url(images/body-bg.jpg);background-repeat: no-repeat;background-position: left bottom;background-attachment: fixed;}
 li{list-style: none;margin: 0;padding: 0;}
 ul{list-style: none;margin: 0;padding: 0;}
+a{margin: 0px;padding: 0px;}
 #nav{width: 243px;height: 100%;background-image:url(images/menu-bg.png); background-repeat: repeat-y;overflow-y: auto;position: fixed;z-index: 101;overflow-x: hidden;}
 #logo{width: 213px;height: 245px;margin: 15px auto 5px;}
 #menu{width: 234px;height: 205px;}
@@ -51,16 +52,48 @@ ul{list-style: none;margin: 0;padding: 0;}
 #switch img{float: left;}
 .cursor{cursor: pointer;}
 #content-article-char{width: 738px;height: 398px;border: 1px solid rgb(48, 49, 57);background-image: url(images/content-bg.png);margin-top: 20px;}
+
 #fazheng{width: 343px;height: 179px;display: block;margin: 5px;background-image: url(images/select-housei.jpg);float: left;}
 #zhuran{width: 343px;height: 179px;display: block;margin: 5px;background-image: url(images/select-syuzen.jpg);float: left;}
 #imgwujiang{float: left; width: 730px;padding-left: 15px;position: relative;}
 #yujin{width: 343px;height: 179px;display: block;margin: 5px;background-image: url(images/select-ukin.jpg);float: left;}
 #chengong{width: 343px;height: 179px;display: block;margin: 5px;background-image: url(images/select-chinkyu.jpg);float: left;}
 #mengban{width: 100%;height: 100%;background-color: rgba(0,0,0,.7);position: fixed;z-index: 200;float: left;display: none;}
-#main-image{width: 676px;height: 424px;position: fixed;z-index: 201;left: 300px;top: 50px;display: none;}
-#infowujing{display: none;position: fixed;width: 442px;height: 312px;padding-top:132px; z-index: 202;left: 320px;top:10px;}
-.detail{background-image: url(images/detail-bg-shoku.png);width: 340px;height: 210px;position: absolute;padding: 8px;margin-bottom: 10px;color: rgb(255,255,255);font-size: 12px;z-index: 203;}
+.main-image{width: 676px;height: 424px;position: fixed;z-index: 201;left: 300px;top: 50px;}
+#infowujing{position: fixed;width: 442px;height: 312px;padding-top:152px; z-index: 202;left: 320px;top:10px;}
+.detail{background-image: url(images/detail-bg-shoku.png);width: 340px; float: left; position: absolute;padding: 8px;margin-bottom: 10px;color: rgb(255,255,255);font-size: 12px;z-index: 203;}
+#gidetail{background-image: url(images/detail-bg-gi.png);}
+#godetail{background-image: url(images/detail-bg-go.png);}
 .detail hr{width: 335px;height: 1px;border-bottom-style: dotted;border-bottom-width: 1px;border-bottom-color: rgb(102, 102, 102);}
 .wujiangname{width: 170px;height: 40px;}
 #wujiangbutton{width: 442px;height: 30px;position: absolute;z-index: 204;top: 370px;}
 #wujiangbutton img{cursor: pointer; }
+#fazhenginfo{display: none;}
+#zhuruaninfo{display: none;}
+.sb-nav-close{width: 94px;height: 30px;display: block;position: absolute;background-image: url(images/close.png);left: 94px;cursor: pointer;}
+.sb-nav{position: fixed;top: 470px;z-index: 205; left: 480px;}
+.sb-nav-next{width: 94px;height: 30px;display: block;position: absolute;background-image: url(images/next.png);left: 164px;top: 0px;cursor: pointer;}
+.sb-nav-previous{width: 94px;height: 30px;display: block;position: absolute;background-image: url(images/prev.png);left: 25px;top: 0px;cursor: pointer;}
+#yujininfo{display: none;}
+#chengonginfo{ display: none;}
+#sum7-content-body{width: 738px;float: left;display: none;padding-top: 10px;border: 1px solid rgb(48, 49, 57);margin-bottom: 80px;background-image: url(images/content-bg.png);}
+#submenu{width: 738px;height: 63px;background-image: url(images/submenu-bg-gi.png); background-repeat: repeat-x;text-align: center;cursor: pointer;}
+#submenu a{width: 109px;height: 35px;margin: 3px 1px 3px 1px;padding: 0; display: inline-block;}
+#sm-gi{background-image: url(images/submenu-bt-bg.jpg);background-position: 50% -35px;}
+#sm-go{background-image: url(images/submenu-bt-bg.jpg);background-position: 50% 0px;}
+#sm-shoku{background-image: url(images/submenu-bt-bg.jpg);background-position: 50% 0px;}
+#sm-shin{background-image: url(images/submenu-bt-bg.jpg);background-position: 50% 0px;}
+#sm-other{background-image: url(images/submenu-bt-bg.jpg);background-position: 50% 0px;}
+#gi{background-image: url(images/gi-bg.png);height: 944px;background-repeat: no-repeat;position: relative;padding-top: 357px;}
+.sp{width: 173px;height: 59px;margin: 8px 14px;background-image: url(images/select-bg-gi-sp.png);background-repeat: no-repeat;display: block;position: absolute;cursor: pointer;}
+#spwujiang1{left: 0px;top: 250px;}
+#spwujiang2{left: 484px;top:250px; }
+#spwujiang3{top: 280px;left: 240px;}
+.normal{width: 313px;height: 102px;margin: 8px 14px;background-image: url(images/select-bg-gi.png);background-repeat: no-repeat;display: block;float: left; cursor: pointer;}
+.giwujiang{display: none;}
+#go{background-image: url(images/go-bg.png);height: 944px;background-repeat: no-repeat;position: relative;padding-top: 357px;display: none;}
+.gosp{background-image: url(images/select-bg-go-sp.png);}
+.shokusp{background-image: url(images/select-bg-shoku-sp.png);}
+.gomor{background-image: url(images/select-bg-go.png);}
+.shokumor{background-image: url(images/select-bg-shoku.png);}
+#shoku{background-image: url(images/shoku-bg.png);height: 944px;background-repeat: no-repeat;position: relative;padding-top: 357px;display: none;}
