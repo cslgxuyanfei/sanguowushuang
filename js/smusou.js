@@ -28,6 +28,8 @@ function iniEleEvents(){
 	$("#menu-top").click(function(){
 		$("#Outlinecontent").hide();
 		$("#Charactherscontent").hide();
+		$("#Screenshotcontent").hide();
+		$("#moviecontent").hide();
 		$("#Topcontent").show();
 		$("body").removeClass(indexclass);
 		$("body").addClass("top");
@@ -39,6 +41,8 @@ function iniEleEvents(){
 	$("#menu-outline").click(function(){
 		$("#Topcontent").hide();
 		$("#Charactherscontent").hide();
+		$("#Screenshotcontent").hide();
+		$("#moviecontent").hide();
 		$("body").removeClass(indexclass);
 		$("body").addClass("outline");
 		$("#container").removeClass(containerindexclass);
@@ -52,6 +56,8 @@ function iniEleEvents(){
 		$("#Outlinecontent").hide();
 		$("#Charactherscontent").show();
 		$("#Topcontent").hide();
+		$("#moviecontent").hide();
+		$("#Screenshotcontent").hide();
 		$("body").removeClass(indexclass);
 		$("body").addClass("outline");
 		$("#container").removeClass(containerindexclass);
@@ -60,6 +66,35 @@ function iniEleEvents(){
 		indexclass="outline";
 
 	})
+	$("#menu-screenshot").click(function(){
+		$("#Outlinecontent").hide();
+		$("#Charactherscontent").hide();
+		$("#Topcontent").hide();
+		$("#moviecontent").hide();
+		$("#Screenshotcontent").show();
+		$("body").removeClass(indexclass);
+		$("body").addClass("outline");
+		$("#container").removeClass(containerindexclass);
+		$("#container").addClass("containoutline");
+		containerindexclass="containoutline";
+		indexclass="outline";
+	})
+    $("#menu-movie").click(function(){
+    	$("#Outlinecontent").hide();
+		$("#Charactherscontent").hide();
+		$("#Topcontent").hide();
+		$("#Screenshotcontent").hide();
+		$("#moviecontent").show();
+		$("body").removeClass(indexclass);
+		$("body").addClass("outline");
+		$("#container").removeClass(containerindexclass);
+		$("#container").addClass("containoutline");
+		containerindexclass="containoutline";
+		indexclass="outline";
+
+    })
+
+
 	$("#sum7btn").addClass("cursor");
 	$("#sum7btn").click(function(){	
 		$(this).attr("src","css/images/switch-original-active.png");
@@ -118,6 +153,7 @@ function iniEleEvents(){
 		$("#yujininfo").hide();
 		$("#chengonginfo").hide();
 		$(".giwujiang").hide();
+		$(".picdetail").hide();
 	
 	})
 	var imgfull="no";
@@ -216,7 +252,8 @@ function iniEleEvents(){
 		$("#fazhenginfo").hide();
 		$("#zhuruaninfo").hide();
 		$("#yujininfo").hide();
-		$("#chengonginfo").hide();
+		$("#chengonginfo").hide();		
+		$(".giwujiang").hide();
 	})
 
 	$(".normal").mouseover(function(){
@@ -278,5 +315,34 @@ function iniEleEvents(){
 		$(".sum7wujiang").hide();
 		var smflags= $(this).attr("smflag");
 		$("#"+smflags).show();
+	})
+
+	$(".picscreen").click(function(){
+		var picindex= $(this).attr("picindex");
+		$("#pic"+picindex).show();
+		$("#mengban").show();
+	})
+
+	$(".screen-sb-nav-next").click(function(){
+		var picindex=$(this).attr("picindex");	
+		var piclagnext=parseInt(picindex)-1;
+		$("#pic"+piclagnext).show();
+		$("#pic"+picindex).hide();
+	})
+	$(".screen-sb-nav-previous").click(function(){
+		var picindex=$(this).attr("picindex");	
+		var piclagpre=parseInt(picindex)+1;
+		$("#pic"+piclagpre).show();
+		$("#pic"+picindex).hide();
+	})
+	$(".screen-sb-nav-close").click(function(){
+		$(".picdetail").hide();
+		$("#mengban").hide();
+	})
+	$(".thumbsneirong").mouseover(function(){
+		$(this).css("background-position","50% -180px");
+	})
+	$(".thumbsneirong").mouseout(function(){
+		$(this).css("background-position","0 0");
 	})
 }

@@ -62,8 +62,10 @@ a{margin: 0px;padding: 0px;}
 .main-image{width: 676px;height: 424px;position: fixed;z-index: 201;left: 300px;top: 50px;}
 #infowujing{position: fixed;width: 442px;height: 312px;padding-top:152px; z-index: 202;left: 320px;top:10px;}
 .detail{background-image: url(images/detail-bg-shoku.png);width: 340px; float: left; position: absolute;padding: 8px;margin-bottom: 10px;color: rgb(255,255,255);font-size: 12px;z-index: 203;}
+#shintail{background-image: url(images/detail-bg-shin.png);}
 #gidetail{background-image: url(images/detail-bg-gi.png);}
 #godetail{background-image: url(images/detail-bg-go.png);}
+#otherdetail{background-image: url(images/detail-bg-other.png);}
 .detail hr{width: 335px;height: 1px;border-bottom-style: dotted;border-bottom-width: 1px;border-bottom-color: rgb(102, 102, 102);}
 .wujiangname{width: 170px;height: 40px;}
 #wujiangbutton{width: 442px;height: 30px;position: absolute;z-index: 204;top: 370px;}
@@ -74,6 +76,12 @@ a{margin: 0px;padding: 0px;}
 .sb-nav{position: fixed;top: 470px;z-index: 205; left: 480px;}
 .sb-nav-next{width: 94px;height: 30px;display: block;position: absolute;background-image: url(images/next.png);left: 164px;top: 0px;cursor: pointer;}
 .sb-nav-previous{width: 94px;height: 30px;display: block;position: absolute;background-image: url(images/prev.png);left: 25px;top: 0px;cursor: pointer;}
+
+.screen-sb-nav{position: relative;}
+.screen-sb-nav-close{width: 94px;height: 30px;display: block;position: absolute;background-image: url(images/close.png);left: 350px; cursor: pointer;}
+.screen-sb-nav-next{width: 94px;height: 30px;display: block;position: absolute;background-image: url(images/next.png);left: 420px;top: 0px;cursor: pointer;}
+.screen-sb-nav-previous{width: 94px;height: 30px;display: block;position: absolute;background-image: url(images/prev.png);left: 280px;top: 0px;cursor: pointer;}
+
 #yujininfo{display: none;}
 #chengonginfo{ display: none;}
 #sum7-content-body{width: 738px;float: left;display: none;padding-top: 10px;border: 1px solid rgb(48, 49, 57);margin-bottom: 80px;background-image: url(images/content-bg.png);}
@@ -94,6 +102,31 @@ a{margin: 0px;padding: 0px;}
 #go{background-image: url(images/go-bg.png);height: 944px;background-repeat: no-repeat;position: relative;padding-top: 357px;display: none;}
 .gosp{background-image: url(images/select-bg-go-sp.png);}
 .shokusp{background-image: url(images/select-bg-shoku-sp.png);}
+.shinsp{background-image: url(images/select-bg-shin-sp.png);}
+.othersp{background-image: url(images/select-bg-other-sp.png);}
+.othermor{background-image: url(images/select-bg-other.png);}
+.shinmor{background-image: url(images/select-bg-shin.png);}
 .gomor{background-image: url(images/select-bg-go.png);}
 .shokumor{background-image: url(images/select-bg-shoku.png);}
+
 #shoku{background-image: url(images/shoku-bg.png);height: 944px;background-repeat: no-repeat;position: relative;padding-top: 357px;display: none;}
+#shin{background-image: url(images/shin-bg.png);background-repeat: no-repeat;position: relative;padding-top: 357px;display: none;}
+#other{background-image: url(images/other-bg.png);background-repeat: no-repeat;position: relative;padding-top: 357px;display: none;}
+
+#screenshotneirong{padding-top: 50px; width: 740px;float: left;}
+#screencontentbd{padding-top: 10px;width: 740px;float: left;background-image: url(images/content-bg.png);border: 1px solid rgb(48, 49, 57);margin-top: 10px;text-align: center;padding-bottom: 10px;}
+#screenneirong{padding-top: 10px;padding-bottom: 10px;margin: 0 auto;width: 690px;}
+.screencap{border:1px solid rgb(51, 51, 51);margin: 2px;width: 166px;height: 94px;float: left;}
+#Screenshotcontent{display: none;}
+.picscreen{cursor: pointer;}
+.screencap:hover{border:1px solid rgb(222, 222, 222);}
+.picdetail{position: fixed; left: 20%;top: 20%;display: none;z-index: 201;border:1px solid rgb(153, 153, 153);}
+#moivebg{width: 740px;padding-top: 50px;float: left;}
+#moiveneirong{padding-top: 10px;width: 740px;float: left;background-image: url(images/content-bg.png);border: 1px solid rgb(48, 49, 57);margin-top: 10px;text-align: center;padding-bottom: 10px;}
+#thumbs{width: 690px;padding: 70px 0;margin: 0 auto;}
+.thumbsneirong{width: 320px;height: 180px;margin: 6px 10px 60px 10px;border:1px solid rgb(51, 51, 51);display: block;float: left;cursor: pointer;position: relative;}
+#movie1{background-image: url(images/thumbnail02.jpg);background-repeat: no-repeat;}
+#moive2{background-image: url(images/thumbnail01.jpg);background-repeat: no-repeat;}
+#moivetitle1{}
+.thumbsneirong p{position: absolute;display: block;font-size: 14px;margin-top: 3px;padding-bottom: 2px;padding-top: 2px;text-align: center;top: 180px;width: 320px;color: rgb(255, 255, 153);}
+#moviecontent{display: none;}
